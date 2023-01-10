@@ -19,6 +19,7 @@ defmodule LiveviewStarterWeb.Router do
 
     get "/", PageController, :index
     get "/guess", GuessController, :index
+    get "/guess/:messenger", HelloController, :show
   end
 
   # Other scopes may use custom stacks.
