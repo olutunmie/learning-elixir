@@ -18,7 +18,6 @@ defmodule PentoWeb.Router do
     pipe_through :browser
 
     get "/", PageController, :index
-    get "/guess", WrongController, :render
   end
 
   # Other scopes may use custom stacks.
