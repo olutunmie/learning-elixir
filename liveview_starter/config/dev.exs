@@ -3,7 +3,7 @@ import Config
 # Configure your database
 config :liveview_starter, LiveviewStarter.Repo,
   username: "postgres",
-  password: "postgres",
+  password: "2023P@ss",
   hostname: "localhost",
   database: "liveview_starter_dev",
   stacktrace: true,
