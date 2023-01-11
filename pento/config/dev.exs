@@ -4,8 +4,8 @@ import Config
 config :pento, Pento.Repo,
   username: "postgres",
   password: "2023P@ss",
-  hostname: "127.0.0.1",
-  database: "pento_dev_db",
+  hostname: "localhost",
+  database: "pento_dev",
   stacktrace: true,
   show_sensitive_data_on_connection_error: true,
   pool_size: 10
@@ -23,7 +23,7 @@ config :pento, PentoWeb.Endpoint,
   check_origin: false,
   code_reloader: true,
   debug_errors: true,
-  secret_key_base: "jSbn6MfBfGMaNnU4n1SOZjsQ+u3p1WcNTSksOjPKGY8yU1OT2Wp/kudmgB0r9Rd5",
+  secret_key_base: "aWUHnL02tdYHmuWdODqx1nxX4Ge5KQbDOwmGgRE7AFCUjoUEpAghdsuOr2uWtczK",
   watchers: [
     # Start the esbuild watcher by calling Esbuild.install_and_run(:default, args)
     esbuild: {Esbuild, :install_and_run, [:default, ~w(--sourcemap=inline --watch)]}
